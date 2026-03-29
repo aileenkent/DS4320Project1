@@ -62,6 +62,12 @@ Background Reading Folder Link
 
 ## Data Creation
 
+The project dataset is the UCI Machine Learning Repository: Diabetes 130-US Hosptials for Years 1999-2008. This dataset is publically avaliable online at https://archive.ics.uci.edu/dataset/296/diabetes+130-us+hospitals+for+years+1999-2008. The data was directly downloaded from the repository creating a raw file called `diabetic_data.csv` and a companion mapping file called `IDs_mapping.csv`. 
+
+I then split the `IDs_mapping.csv` into three separate csv files for each type of id. These files are called `admission_type_id`, `discharge_disposition_id`, and `admission_source_id`. This decision was made because originally the three types of ids were stacked ontop of each other just visiually separated by a blank row (or a row of nan values), which made it very difficult to search the file without actually opening it and visually looking as the ids all use numerical codes starting at 1. 
+
+Following this I split the `diabetic_data.csv` into two files, `diabetic_data.csv` and `medicines.csv`. The file `medicines.csv` would include the 23 columns of yes/no responses to individual medications in the original `diabetic_data.csv` as well as a copy of the encounter_id column to ensure I can match the medications to the individual encounter. This decision was made preserve the medication list while not having it be in the main table as I do not anticipate needing to use all of them. 
+
 Bias Identification:
 
 There are a few sources of bias in this dataset. Firstly, thre is a demographic representation bias as the dataset is drawn from 130 US hospitals, so it doesn't represent rural hospital, critical access hospital, or non-US health systems. Also it the distribution of demographic data is a reflection of the hospital mix of 1999-2008. Secoundly, there is a survivorship bias in the `readmitted` label, as it only captures readmissions in the same hospital and does not account for patients who died shortly after discharge. Thirdly, there is three features with high missingness, icnluding `weight`, which is likely correlated with the outcomes as it is related to metabolic concerns. Fourthly, there is a historical bias present because this dataset is from 1999-2008, many practices and policies of medicine have changed since then.
