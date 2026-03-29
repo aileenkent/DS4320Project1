@@ -11,7 +11,7 @@ Data folder Link
 
 Pipeline LInk 
 
-License: 
+License: GNU General Public License v3.0 [link](https://github.com/aileenkent/DS4320Project1/tree/main?tab=GPL-3.0-1-ov-file#)
 
 ## Problem Definition
 
