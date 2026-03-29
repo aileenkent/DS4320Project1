@@ -7,7 +7,7 @@ DOI:
 
 Press Release link
 
-Data folder Link
+Data folder [Link](https://myuva-my.sharepoint.com/:f:/g/personal/sbx3sw_virginia_edu/IgBww9hBIwRRRLA1D5kjBQJIAZgjIwPbDUQb0bT_flmnXrU?e=jLDLmF)
 
 Pipeline LInk 
 
@@ -67,6 +67,11 @@ The project dataset is the UCI Machine Learning Repository: Diabetes 130-US Hosp
 I then split the `IDs_mapping.csv` into three separate csv files for each type of id. These files are called `admission_type_id`, `discharge_disposition_id`, and `admission_source_id`. This decision was made because originally the three types of ids were stacked ontop of each other just visiually separated by a blank row (or a row of nan values), which made it very difficult to search the file without actually opening it and visually looking as the ids all use numerical codes starting at 1. 
 
 Following this I split the `diabetic_data.csv` into two files, `diabetic_data.csv` and `medicines.csv`. The file `medicines.csv` would include the 23 columns of yes/no responses to individual medications in the original `diabetic_data.csv` as well as a copy of the encounter_id column to ensure I can match the medications to the individual encounter. This decision was made preserve the medication list while not having it be in the main table as I do not anticipate needing to use all of them. 
+
+| file | Description | Link |
+| ---- | ---- | ---- |
+| `data_cleaning.py` | Loads raw `diabetic_data.csv`, splits the file into `diabetic_data.csv` and `medications.csv`, drops columns with >50% missing values (`weight`, `payer_code`, `medical_specialty`), indicator feature `weight_missing` added, replaces `?` with NaN, binarizes the target variable (`readmitted_30d`), encodes categorical features, and saves `diabetic_readmission_cleaned.csv` | [Link](https://colab.research.google.com/drive/1HmuQk7p9waBaCgF-noMLzjwPKDY8HjNH#scrollTo=PZIu_Yt4ns2M&line=3&uniqifier=1) |
+| `id_cleaning.py` | splits the original `IDs_mapping.csv` into three separate csv files, using the blank/NaN rows in the `IDs_mapping.csv` as the divider between the different types of IDs | [Link to repo](https://colab.research.google.com/drive/1HmuQk7p9waBaCgF-noMLzjwPKDY8HjNH#scrollTo=vhnRvlGUoSEt&line=18&uniqifier=1) |
 
 Bias Identification:
 
