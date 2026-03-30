@@ -70,8 +70,8 @@ Following this I split the `diabetic_data.csv` into two files, `diabetic_data.cs
 
 | file | Description | Link |
 | ---- | ---- | ---- |
-| `data_cleaning.py` | Loads raw `diabetic_data.csv`, splits the file into `diabetic_data.csv` and `medications.csv`, drops columns with >50% missing values (`weight`, `payer_code`, `medical_specialty`), indicator feature `weight_missing` added, replaces `?` with NaN, binarizes the target variable (`readmitted_30d`), encodes categorical features, and saves `diabetic_readmission_cleaned.csv` | [Link](https://colab.research.google.com/drive/1HmuQk7p9waBaCgF-noMLzjwPKDY8HjNH#scrollTo=PZIu_Yt4ns2M&line=3&uniqifier=1) |
-| `id_cleaning.py` | splits the original `IDs_mapping.csv` into three separate csv files, using the blank/NaN rows in the `IDs_mapping.csv` as the divider between the different types of IDs | [Link to repo](https://colab.research.google.com/drive/1HmuQk7p9waBaCgF-noMLzjwPKDY8HjNH#scrollTo=vhnRvlGUoSEt&line=18&uniqifier=1) |
+| `data_cleaning.py` | Loads raw `diabetic_data.csv`, splits the file into `diabetic_data.csv` and `medications.csv`, drops columns with >50% missing values (`weight`, `payer_code`, `medical_specialty`), indicator feature `weight_missing` added, replaces `?` with NaN, binarizes the target variable (`readmitted_30d`), encodes categorical features, and saves `diabetic_readmission_cleaned.csv` | [Link](https://github.com/aileenkent/DS4320Project1/blob/fb7d3e68343bacbfc136be439309dc8daf9b598f/Data%20Creation/data_cleaning.py) |
+| `id_cleaning.py` | splits the original `IDs_mapping.csv` into three separate csv files, using the blank/NaN rows in the `IDs_mapping.csv` as the divider between the different types of IDs | [Link to repo](https://github.com/aileenkent/DS4320Project1/blob/fb7d3e68343bacbfc136be439309dc8daf9b598f/Data%20Creation/id_cleaning.py) |
 
 Bias Identification:
 
@@ -86,3 +86,7 @@ Rationale:
 There are a few cirtical decisions that were made. Firstly, I binarized the target variable to fit wiht the project problem statment that is a binary classfiication task. Secondly. I dropped the high-missingness columns as a decision to avoid introducing more noise than signal.
 
 There is uncertainly introduced by the feature engineering as the ICD-9 grouping schema might cause different results as grouping schemas have that possibility.
+
+## Metadata
+
+
