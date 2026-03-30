@@ -1,15 +1,14 @@
 # DS 4320 Project 1: Diabetic Patients Readmission Prediction 
 
-Aileen Kent
-sbx3sw
+Aileen Kent, sbx3sw
 
 DOI:
 
-Press Release link
+Press Release [Link](https://github.com/aileenkent/DS4320Project1/blob/c346525a6540a8d698c99d23c0a0faa6eb43f3c3/Press%20Release.md)
 
 Data folder [Link](https://myuva-my.sharepoint.com/:f:/g/personal/sbx3sw_virginia_edu/IgBww9hBIwRRRLA1D5kjBQJIAZgjIwPbDUQb0bT_flmnXrU?e=jLDLmF)
 
-Pipeline LInk 
+Pipeline Link 
 
 License: GNU General Public License v3.0 [link](https://github.com/aileenkent/DS4320Project1/tree/main?tab=GPL-3.0-1-ov-file#)
 
@@ -25,7 +24,7 @@ This refinement focuses on narrowing down the scope of the hospital readmissions
 Motivation: 
 This project is motivated by the quality and cost problems that hospital readmissions within 30 days raise within the US healthcare system. Hospitals are penalized financially for excessive readmission rates by the Hospital Readmission Reduction Program. But it is crucial that patients aren't dismissed or have their symptoms reduced in order to avoide readmission. Diabetic patiens are among the highest-risk groups for readmission because the managment of diabetes is easily disrupted post-discharge. A machine learning classifier that can flag high-risk patients at discharge could trigger targeted interventions that could reduce readmission rates while imporivng patient outcomes.
 
-Press Release Headline: Intervention Before You Leave - New Readmission Risk tool Protects Patients
+Press Release Headline: Intervention Before You Leave - New Readmission Risk tool Protects Patients [Link](https://github.com/aileenkent/DS4320Project1/blob/c346525a6540a8d698c99d23c0a0faa6eb43f3c3/Press%20Release.md)
 
 ## Domain Exposition
 
@@ -50,15 +49,15 @@ Domain:
 
 This project is in the domain of clinical healthcare analytics, specifically hospital quality improvement and care transitions management. Hospitals in the US are reimbursed and evaluated by CMS partially based on their readmission rates. Diabetes is one of the most common and costly chronic conidtions in the US, with diabetic patients showing disporportionately high readmission rates. With electronic health record (EHR) data becoming stanrdarized, machine learning models can be trained on historical records and integrated into clinical decision support system.
 
-Background Reading Folder Link
+Background Reading Folder [Link](https://myuva-my.sharepoint.com/:f:/g/personal/sbx3sw_virginia_edu/IgAMrnGCX7x6SL94d1PQ4Tg4AXeTnslZlwXzU8QLjjM84jo?e=dSbtx6)
 
 | Title | Description | Link |
 | ---- | ---- | ---- |
-| UCI ML Diabetes 130-US Hospitals Datset (Strack et al., 2014) | Original paper describing dataset used in project | [link](https://drive.google.com/file/d/1xd2hBvLsJuCnL7-ww2EuTq-vXk4DGs6_/view?usp=drive_link) |
-| CMS Hospital Readmissions Reduction Program Overview | Explains the policy context and financial stakes of readmissions | [link](https://www.cms.gov/medicare/payment/prospective-payment-systems/acute-inpatient-pps/hospital-readmissions-reduction-program-hrrp) |
-| Predicting Hospital Readmission in Diabetic Patients - a Review | Surveys ML appraches for readmission prediction | [link](https://drive.google.com/file/d/1VN6H53uJuL0AwqJDLV44tqkjNSHrIvaT/view?usp=drive_link) |
-| ADA Standards of Medical Care in Diabetes | Clinical guidelines context for what "good" diabetes management looks like | [link](https://drive.google.com/file/d/19WEBjxOX3cVzF5qWQHgh0_zZ98VHjvHb/view?usp=drive_link) |
-| Predicting and Preventing Acute Care Re-Utilization by Patients with Diabetes (Rubin & Shah, 2021) | Provides a review, summary and evaulation of possible interventions | [link](https://drive.google.com/file/d/18n2N2hcxbCOyAyPLZu7RVZXzjnMl_-WP/view?usp=drive_link)
+| UCI ML Diabetes 130-US Hospitals Datset (Strack et al., 2014) | Original paper describing dataset used in project | [link](https://myuva-my.sharepoint.com/:b:/r/personal/sbx3sw_virginia_edu/Documents/DS4320Project1Reading/BioMed%20Research%20International%20-%202014%20-%20Strack%20-%20Impact%20of%20HbA1c%20Measurement%20on%20Hospital%20Readmission%20Rates%20%20Analysis%20of%2070.pdf?csf=1&web=1&e=7Gs3hP) |
+| CMS Hospital Readmissions Reduction Program Overview | Explains the policy context and financial stakes of readmissions | [link](https://myuva-my.sharepoint.com/:u:/r/personal/sbx3sw_virginia_edu/Documents/DS4320Project1Reading/CMS%20Hospital%20Readmission%20Reduction%20Program%20Overview.url?csf=1&web=1&e=EsNxn2) |
+| A Systemic Review of Recent Studies on Hospital Readmissions of Patients With Diabetes (Kukde et al., 2024) | Reivews 21 studies from 2015-2023  examining risk factors, prediction methods, and outcomes for diabetic hospital readmissions | [link](https://myuva-my.sharepoint.com/:b:/r/personal/sbx3sw_virginia_edu/Documents/DS4320Project1Reading/A%20Systemic%20Review%20of%20Recent%20Studies%20on%20Hospital%20Readmissions%20of%20Patients%20With%20Diabetes.pdf?csf=1&web=1&e=HLxVsa) |
+| ADA Standards of Medical Care in Diabetes | Clinical guidelines context for what "good" diabetes management looks like | [link](https://myuva-my.sharepoint.com/:b:/r/personal/sbx3sw_virginia_edu/Documents/DS4320Project1Reading/ADA%20Standards%20of%20Medical%20Care%20in%20Diabetes.pdf?csf=1&web=1&e=098e2z) |
+| Predicting and Preventing Acute Care Re-Utilization by Patients with Diabetes (Rubin & Shah, 2021) | Provides a review, summary and evaulation of possible interventions | [link](https://myuva-my.sharepoint.com/:b:/r/personal/sbx3sw_virginia_edu/Documents/DS4320Project1Reading/Predicting%20and%20Preventing%20Acute%20Care%20Re-Utilization%20by%20Patients%20with%20Diabetes%20(Rubin%20%26%20Shah,%202021).pdf?csf=1&web=1&e=zgbRXB)
 
 ## Data Creation
 
