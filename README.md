@@ -98,3 +98,71 @@ There is uncertainly introduced by the feature engineering as the ICD-9 grouping
 | `admission_type_id.csv` | description of the code for admission type ids, includes the number number that is a foreign key in the `diabetic_readmission_cleaned.csv` and description | [Link](https://myuva-my.sharepoint.com/:x:/r/personal/sbx3sw_virginia_edu/Documents/DS4030Project1/admission_type_id.csv?d=w78cfb81f3b934129b4a8e7185ac427f7&csf=1&web=1&e=jBNmGP) |
 | `discharge_disposition_id.csv` | discription of the code for discharge disposition ids, includes the number number that is a foreign key in the `diabetic_readmission_cleaned.csv` and description | [Link](https://myuva-my.sharepoint.com/:x:/r/personal/sbx3sw_virginia_edu/Documents/DS4030Project1/discharge_disposition_id.csv?d=w70f6676d9f5e4da086393ba6f0550ccb&csf=1&web=1&e=2sXBEd) |
 
+| Table | Feature Name | Data Type | Description | Example |
+| ---- |---|---|---|---|
+| `diabetic_readmission_cleaned.csv` | encounter_id | Integer | PK - Unique identifier for each hospital encounter | `2278392` |
+| `diabetic_readmission_cleaned.csv` | patient_nbr | Integer | De-identified patient identifier; used to filter to first encounter per patient | `8222157` |
+| `diabetic_readmission_cleaned.csv` | race | String | Patient's self-reported race category | `"Caucasian"` |
+| `diabetic_readmission_cleaned.csv` | gender | String | Patient's recorded gender | `"Female"` |
+| `diabetic_readmission_cleaned.csv` | age | String | Age bracket in 10-year intervals | `"[50-60)"` |
+| `diabetic_readmission_cleaned.csv` | admission_type_id | Integer | FK - Coded admission type (1=Emergency, 2=Urgent, 3=Elective, etc.) | `1` |
+| `diabetic_readmission_cleaned.csv` | discharge_disposition_id | Integer | FK - Coded discharge destination (1=Home, 3=SNF, 11=Deceased, etc.) | `1` |
+| `diabetic_readmission_cleaned.csv` | admission_source_id | Integer | FK - Coded source of admission (7=ER, 1=Physician Referral, etc.) | `7` |
+| `diabetic_readmission_cleaned.csv` | time_in_hospital | Integer | Number of days patient remained hospitalized | `5` |
+| `diabetic_readmission_cleaned.csv` | num_lab_procedures | Integer | Number of distinct lab procedures performed during encounter | `41` |
+| `diabetic_readmission_cleaned.csv` | num_procedures | Integer | Number of non-lab procedures performed during encounter | `1` |
+| `diabetic_readmission_cleaned.csv` | num_medications | Integer | Number of distinct medications administered during encounter | `18` |
+| `diabetic_readmission_cleaned.csv` | number_outpatient | Integer | Number of outpatient visits in the year prior to the encounter | `0` |
+| `diabetic_readmission_cleaned.csv` | number_emergency | Integer | Number of emergency department visits in the year prior to the encounter | `0` |
+| `diabetic_readmission_cleaned.csv` | number_inpatient | Integer | Number of inpatient visits in the year prior to the encounter | `0` |
+| `diabetic_readmission_cleaned.csv` | number_diagnoses | Integer | Number of distinct diagnoses entered for the encounter | `9` |
+| `diabetic_readmission_cleaned.csv` | diag_1_group | String | ICD-9 category group for primary diagnosis | `"Circulatory"` |
+| `diabetic_readmission_cleaned.csv` | diag_2_group | String | ICD-9 category group for secondary diagnosis | `"Diabetes"` |
+| `diabetic_readmission_cleaned.csv` | diag_3_group | String | ICD-9 category group for additional diagnosis | `"Musculoskeletal"` |
+| `diabetic_readmission_cleaned.csv` | A1Cresult | String | HbA1c test result: `None`, `Norm`, `>7`, or `>8` | `">8"` |
+| `diabetic_readmission_cleaned.csv` | insulin | String | Insulin medication dosage change status: `No`, `Steady`, `Up`, `Down` | `"Steady"` |
+| `diabetic_readmission_cleaned.csv` | change | String | Whether any medication dosage was changed: `Ch` or `No` | `"Ch"` |
+| `diabetic_readmission_cleaned.csv` | diabetesMed | String | Whether any diabetes medication was prescribed: `Yes` or `No` | `"Yes"` |
+| `diabetic_readmission_cleaned.csv` | weight_missing | Integer | Indicator variable: 1 if weight was not recorded, 0 if recorded | `1` |
+| `diabetic_readmission_cleaned.csv` | readmitted_30d | Integer | **Target variable.** 1 = patient readmitted within 30 days of discharge; 0 = not readmitted within 30 days | `0` |
+| medicines.csv` | encounter_id | Integer | FK - Unique identifier for each hospital encounter | `2278392` |
+| medicines.csv` | metformin | String | Indicator if patiente takes metformin (either no or steady) | `steady` |
+| medicines.csv` | repaglinide | String | Indicator if patiente takes repaglinide (either no or steady) | `no` |
+| medicines.csv` | nateglinide | String | Indicator if patiente takes nateglinide (either no or steady) | `steady` |
+| medicines.csv` | chlorpropamide | String | Indicator if patiente takes chlorpropamide (either no or steady) | `no` |
+| medicines.csv` | glimepiride | String | Indicator if patiente takes glimepiride (either no or steady) | `steady` |
+| medicines.csv` | acetohexamide | String | Indicator if patiente takes acetohexamide (either no or steady) | `steady` |
+| medicines.csv` | glipizide | String | Indicator if patiente takes glipizide (either no or steady) | `no` |
+| medicines.csv` | glyburide | String | Indicator if patiente takes glyburide (either no or steady) | `no` |
+| medicines.csv` | tolbutamide | String | Indicator if patiente takes tolbutamide (either no or steady) | `no` |
+| medicines.csv` | piolitazone | String | Indicator if patiente takes piolitazone (either no or steady) | `steady` |
+| medicines.csv` | rosiglitazone | String | Indicator if patiente takes rosiglitazone (either no or steady) | `steady` |
+| medicines.csv` | acarbose | String | Indicator if patiente takes acarbose (either no or steady) | `no` |
+| medicines.csv` | miglitol | String | Indicator if patiente takes miglitol (either no or steady) | `steady` |
+| medicines.csv` | troglitazone | String | Indicator if patiente takes troglitazone (either no or steady) | `no` |
+| medicines.csv` | tolazamide | String | Indicator if patiente takes tolazamide (either no or steady) | `no` |
+| medicines.csv` | examide | String | Indicator if patiente takes examide (either no or steady) | `steady` |
+| medicines.csv` | citoglipton | String | Indicator if patiente takes citoglipton (either no or steady) | `steady` |
+| medicines.csv` | insulin | String | Indicator of the patient's use of insulin (no, up, steady, down) | `up` |
+| medicines.csv` | glyburide-metformin | String | Indicator if patiente takes glyburide-metformin (either no or steady) | `steady` |
+| medicines.csv` | glipizide-metformin | String | Indicator if patiente takes glipizide-metformin (either no or steady) | `no` |
+| medicines.csv` | glimepride-pioglitazone | String | Indicator if patiente takes glimepride-pioglitazone (either no or steady) | `steady` |
+| medicines.csv` | metformin-rosiglitazone | String | Indicator if patiente takes metformin-rosiglitazone (either no or steady) | `steady` |
+| medicines.csv` | metformin-pioglitazone | String | Indicator if patiente takes metformin-pioglitazone (either no or steady) | `no` |
+| `admission_type_id.csv` | admission_type_id | Integer | PK - Coded numerical admission type indicator | `1` |
+| `admission_type_id.csv` | description | String | Explanation of each coded number | `Elective` |
+| `discharge_disposition_id.csv` | discharge_disposition_id | Integer | PK - Coded numerical discharge disposition type indicator | `4` |
+| `discharge_disposition_id.csv` | description | String | Explanation of each coded number | `Discharged/transferred to ICF` |
+| `admission_source_id.csv` | admission_source_id | Integer | Coded numerical admission source type indicator | `10` |
+| `admission_source_id.csv` | description | String | Explanation of each coded number | `Transfer from critial access hospital` |
+
+| Table | Feature | Min | Max | Mean | Std Dev | Notes |
+| ---- |---|---|---|---|---|---- |
+| `diabetic_readmission_cleaned.csv` | time_in_hospital | 1 | 14 | 4.4 | 2.99 | Capped at 14 in dataset; any stays >14 days recorded as 14 |
+| `diabetic_readmission_cleaned.csv` | num_lab_procedures | 1 | 132 | 43.1 | 19.67 | Right-skewed; high values may reflect prolonged stays rather than severity |
+| `diabetic_readmission_cleaned.csv` | num_procedures | 0 | 6 | 1.34 | 1.71 | Zero-inflated; many patients have no non-lab procedures |
+| `diabetic_readmission_cleaned.csv` | num_medications | 1 | 81 | 16.0 | 8.13 | High values are meaningful signal but may also reflect data entry patterns |
+| `diabetic_readmission_cleaned.csv` | number_outpatient | 0 | 42 | 0.37 | 1.34 | Heavily right-skewed; most patients have 0 |
+| `diabetic_readmission_cleaned.csv` | number_emergency | 0 | 76 | 0.20 | 0.93 | Extreme outliers (>10) may reflect data errors |
+| `diabetic_readmission_cleaned.csv` | number_inpatient | 0 | 21 | 0.64 | 1.24 | Strong predictor of readmission but affected by missingness from cross-hospital transfers |
+| `diabetic_readmission_cleaned.csv` | number_diagnoses | 1 | 16 | 7.42 | 1.94 | Near-normally distributed; less extreme than other count features |
