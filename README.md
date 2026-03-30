@@ -90,3 +90,12 @@ There is uncertainly introduced by the feature engineering as the ICD-9 grouping
 ## Metadata
 
 ![Entity Relationship Diagram with `diabetic_readmission_cleaned.csv`, `medications.csv`, `admission_type_id`, `discharge_disposition_id`, and `admission_source_id`](Images/Project1ERD.png)
+
+| Table Name | Description | Link to CSV |
+|---|---|---|
+| `diabetic_readmission_cleaned.csv` | Cleaned, first-encounter-only subset of the UCI Diabetes 130-US Hospitals dataset. One row per unique patient (~71,518 records). Binary target `readmitted_30d` indicates 30-day readmission. | [Link](https://myuva-my.sharepoint.com/:x:/r/personal/sbx3sw_virginia_edu/Documents/DS4030Project1/diabetic_readmission_cleaned.csv?d=w04a956f286b340ed8006089ecf825c77&csf=1&web=1&e=nMSq3W) |
+| `medicines.csv` | one row per unique patient, only responses to questions about individual medications, encounter_id is FK to connect to `diabetic_readmisison_cleaned.csv` | [Link](https://myuva-my.sharepoint.com/:x:/r/personal/sbx3sw_virginia_edu/Documents/DS4030Project1/medicines.csv?d=w2e2c742ad7fa4a7d943cac8f288dac8a&csf=1&web=1&e=5wLm6V) |
+| `admission_source_id.csv` | description of the code for admission source ids, includes the numeric number that is a foreign key in the `diabetic_readmission_cleaned.csv` and description | [Link](https://myuva-my.sharepoint.com/:x:/r/personal/sbx3sw_virginia_edu/Documents/DS4030Project1/admission_source_id.csv?d=w4b0dc0b7158b406584fa2047fd843699&csf=1&web=1&e=hAPylx) |
+| `admission_type_id.csv` | description of the code for admission type ids, includes the number number that is a foreign key in the `diabetic_readmission_cleaned.csv` and description | [Link](https://myuva-my.sharepoint.com/:x:/r/personal/sbx3sw_virginia_edu/Documents/DS4030Project1/admission_type_id.csv?d=w78cfb81f3b934129b4a8e7185ac427f7&csf=1&web=1&e=jBNmGP) |
+| `discharge_disposition_id.csv` | discription of the code for discharge disposition ids, includes the number number that is a foreign key in the `diabetic_readmission_cleaned.csv` and description | [Link](https://myuva-my.sharepoint.com/:x:/r/personal/sbx3sw_virginia_edu/Documents/DS4030Project1/discharge_disposition_id.csv?d=w70f6676d9f5e4da086393ba6f0550ccb&csf=1&web=1&e=2sXBEd) |
+
