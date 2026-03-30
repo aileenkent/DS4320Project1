@@ -89,4 +89,4 @@ There is uncertainly introduced by the feature engineering as the ICD-9 grouping
 
 ## Metadata
 
-
+![Entity Relationship Diagram with `diabetic_readmission_cleaned.csv`, `medications.csv`, `admission_type_id`, `discharge_disposition_id`, and `admission_source_id`](Images/Project1ERD.png)
