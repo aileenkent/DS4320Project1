@@ -92,7 +92,7 @@ Following this I split the `diabetic_data.csv` into two files, `diabetic_data.cs
 | file | Description | Link |
 | ---- | ---- | ---- |
 | `data_cleaning.py` | Loads raw `diabetic_data.csv`, splits the file into `diabetic_data.csv` and `medications.csv`, drops columns with >50% missing values (`weight`, `payer_code`, `medical_specialty`), indicator feature `weight_missing` added, replaces `?` with NaN, binarizes the target variable (`readmitted_30d`), encodes categorical features, and saves `diabetic_readmission_cleaned.csv` | [Link](https://github.com/aileenkent/DS4320Project1/blob/fb7d3e68343bacbfc136be439309dc8daf9b598f/Data%20Creation/data_cleaning.py) |
-| `id_cleaning.py` | splits the original `IDs_mapping.csv` into three separate csv files, using the blank/NaN rows in the `IDs_mapping.csv` as the divider between the different types of IDs | [Link to repo](https://github.com/aileenkent/DS4320Project1/blob/fb7d3e68343bacbfc136be439309dc8daf9b598f/Data%20Creation/id_cleaning.py) |
+| `id_cleaning.py` | splits the original `IDs_mapping.csv` into three separate csv files, using the blank/NaN rows in the `IDs_mapping.csv` as the divider between the different types of IDs | [Link](https://github.com/aileenkent/DS4320Project1/blob/fb7d3e68343bacbfc136be439309dc8daf9b598f/Data%20Creation/id_cleaning.py) |
 
 ### Bias Identification:
 
