@@ -1,5 +1,9 @@
 # DS 4320 Project 1: Diabetic Patients Readmission Prediction 
 
+### Executive Summary:
+
+In this repository, there is the full data pipeline and predictive model for classifying 30-day hospital readmission risk in diabetic patients. Using the UCI Diabetes 130-US Hosptials dataset (1999-2008), the raw data was transformed into a 5 table relational model and trained a binary classification model. The motivation behind this project was easing the number of preventable readmissions (which provide both a financial and clinical burden) and it was found that the prior inpatient visit history was among the strongest predictive factors. The repositroy has all the scripts for the data collection, cleaning, and training of the model. Additionally all the datasets and background readings are linked on a UVA OneDrive. 
+
 Aileen Kent, sbx3sw
 
 ### DOI:
