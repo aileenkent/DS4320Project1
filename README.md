@@ -14,7 +14,7 @@ Aileen Kent, sbx3sw
 
 ### Data folder 
 
-[Link](https://myuva-my.sharepoint.com/:f:/g/personal/sbx3sw_virginia_edu/IgBww9hBIwRRRLA1D5kjBQJIAZgjIwPbDUQb0bT_flmnXrU?e=jLDLmF)
+[Link](https://myuva-my.sharepoint.com/:f:/g/personal/sbx3sw_virginia_edu/IgBww9hBIwRRRLA1D5kjBQJIAaIV-C81UPHXK9Fjchyv6WE?e=I0hgFV)
 
 ### Pipeline 
 
@@ -71,15 +71,15 @@ This project is in the domain of clinical healthcare analytics, specifically hos
 
 ### Background Reading Folder 
 
-[Link](https://myuva-my.sharepoint.com/:f:/g/personal/sbx3sw_virginia_edu/IgAMrnGCX7x6SL94d1PQ4Tg4AXeTnslZlwXzU8QLjjM84jo?e=dSbtx6)
+[Link](https://myuva-my.sharepoint.com/:f:/g/personal/sbx3sw_virginia_edu/IgAMrnGCX7x6SL94d1PQ4Tg4Abfx4ACf_yG0L-AX9XNPswM?e=t5QRaC)
 
 | Title | Description | Link |
 | ---- | ---- | ---- |
-| UCI ML Diabetes 130-US Hospitals Datset (Strack et al., 2014) | Original paper describing dataset used in project | [link](https://myuva-my.sharepoint.com/:b:/r/personal/sbx3sw_virginia_edu/Documents/DS4320Project1Reading/BioMed%20Research%20International%20-%202014%20-%20Strack%20-%20Impact%20of%20HbA1c%20Measurement%20on%20Hospital%20Readmission%20Rates%20%20Analysis%20of%2070.pdf?csf=1&web=1&e=7Gs3hP) |
-| CMS Hospital Readmissions Reduction Program Overview | Explains the policy context and financial stakes of readmissions | [link](https://myuva-my.sharepoint.com/:u:/r/personal/sbx3sw_virginia_edu/Documents/DS4320Project1Reading/CMS%20Hospital%20Readmission%20Reduction%20Program%20Overview.url?csf=1&web=1&e=EsNxn2) |
-| A Systemic Review of Recent Studies on Hospital Readmissions of Patients With Diabetes (Kukde et al., 2024) | Reivews 21 studies from 2015-2023  examining risk factors, prediction methods, and outcomes for diabetic hospital readmissions | [link](https://myuva-my.sharepoint.com/:b:/r/personal/sbx3sw_virginia_edu/Documents/DS4320Project1Reading/A%20Systemic%20Review%20of%20Recent%20Studies%20on%20Hospital%20Readmissions%20of%20Patients%20With%20Diabetes.pdf?csf=1&web=1&e=HLxVsa) |
-| ADA Standards of Medical Care in Diabetes | Clinical guidelines context for what "good" diabetes management looks like | [link](https://myuva-my.sharepoint.com/:b:/r/personal/sbx3sw_virginia_edu/Documents/DS4320Project1Reading/ADA%20Standards%20of%20Medical%20Care%20in%20Diabetes.pdf?csf=1&web=1&e=098e2z) |
-| Predicting and Preventing Acute Care Re-Utilization by Patients with Diabetes (Rubin & Shah, 2021) | Provides a review, summary and evaulation of possible interventions | [link](https://myuva-my.sharepoint.com/:b:/r/personal/sbx3sw_virginia_edu/Documents/DS4320Project1Reading/Predicting%20and%20Preventing%20Acute%20Care%20Re-Utilization%20by%20Patients%20with%20Diabetes%20(Rubin%20%26%20Shah,%202021).pdf?csf=1&web=1&e=zgbRXB)
+| UCI ML Diabetes 130-US Hospitals Datset (Strack et al., 2014) | Original paper describing dataset used in project | [link](https://myuva-my.sharepoint.com/:b:/g/personal/sbx3sw_virginia_edu/IQC0jB-uDNVIT7vrzl-8gTi8AYdiv12hPsWk6T5mZzErZMY?e=BdrlU3) |
+| CMS Hospital Readmissions Reduction Program Overview | Explains the policy context and financial stakes of readmissions | [link](https://myuva-my.sharepoint.com/:u:/g/personal/sbx3sw_virginia_edu/IQDN931nWlU8QrYCJVrN0jJ8AazBtNs0cKxjMNebA1b64NA?e=Cg0heJ) |
+| A Systemic Review of Recent Studies on Hospital Readmissions of Patients With Diabetes (Kukde et al., 2024) | Reivews 21 studies from 2015-2023  examining risk factors, prediction methods, and outcomes for diabetic hospital readmissions | [link](https://myuva-my.sharepoint.com/:b:/g/personal/sbx3sw_virginia_edu/IQCy0Ooz--sqR6XB_a3RcEUrAfOKpu61QxAuLMnSt6l0IcE?e=T5KWA6) |
+| ADA Standards of Medical Care in Diabetes | Clinical guidelines context for what "good" diabetes management looks like | [link](https://myuva-my.sharepoint.com/:b:/g/personal/sbx3sw_virginia_edu/IQA5dBBdo0KaS5Z-J-xdnNjaAZpTGkdFmv1pFMOPrdXOF_I?e=ujjQWl) |
+| Predicting and Preventing Acute Care Re-Utilization by Patients with Diabetes (Rubin & Shah, 2021) | Provides a review, summary and evaulation of possible interventions | [link](https://myuva-my.sharepoint.com/:b:/g/personal/sbx3sw_virginia_edu/IQDQTiVjxKm-Qr3uwWsbGMtWASBs6jGTjCZm3ssAcrKOnaI?e=Id0gLv)
 
 ## Data Creation
 
@@ -118,11 +118,11 @@ There is uncertainly introduced by the feature engineering as the ICD-9 grouping
 
 | Table Name | Description | Link to CSV |
 |---|---|---|
-| `diabetic_readmission_cleaned.csv` | Cleaned, first-encounter-only subset of the UCI Diabetes 130-US Hospitals dataset. One row per unique patient (~71,518 records). Binary target `readmitted_30d` indicates 30-day readmission. | [Link](https://myuva-my.sharepoint.com/:x:/r/personal/sbx3sw_virginia_edu/Documents/DS4030Project1/diabetic_readmission_cleaned.csv?d=w04a956f286b340ed8006089ecf825c77&csf=1&web=1&e=nMSq3W) |
-| `medicines.csv` | one row per unique patient, only responses to questions about individual medications, encounter_id is FK to connect to `diabetic_readmisison_cleaned.csv` | [Link](https://myuva-my.sharepoint.com/:x:/r/personal/sbx3sw_virginia_edu/Documents/DS4030Project1/medicines.csv?d=w2e2c742ad7fa4a7d943cac8f288dac8a&csf=1&web=1&e=5wLm6V) |
-| `admission_source_id.csv` | description of the code for admission source ids, includes the numeric number that is a foreign key in the `diabetic_readmission_cleaned.csv` and description | [Link](https://myuva-my.sharepoint.com/:x:/r/personal/sbx3sw_virginia_edu/Documents/DS4030Project1/admission_source_id.csv?d=w4b0dc0b7158b406584fa2047fd843699&csf=1&web=1&e=hAPylx) |
-| `admission_type_id.csv` | description of the code for admission type ids, includes the number number that is a foreign key in the `diabetic_readmission_cleaned.csv` and description | [Link](https://myuva-my.sharepoint.com/:x:/r/personal/sbx3sw_virginia_edu/Documents/DS4030Project1/admission_type_id.csv?d=w78cfb81f3b934129b4a8e7185ac427f7&csf=1&web=1&e=jBNmGP) |
-| `discharge_disposition_id.csv` | discription of the code for discharge disposition ids, includes the number number that is a foreign key in the `diabetic_readmission_cleaned.csv` and description | [Link](https://myuva-my.sharepoint.com/:x:/r/personal/sbx3sw_virginia_edu/Documents/DS4030Project1/discharge_disposition_id.csv?d=w70f6676d9f5e4da086393ba6f0550ccb&csf=1&web=1&e=2sXBEd) |
+| `diabetic_readmission_cleaned.csv` | Cleaned, first-encounter-only subset of the UCI Diabetes 130-US Hospitals dataset. One row per unique patient (~71,518 records). Binary target `readmitted_30d` indicates 30-day readmission. | [Link](https://myuva-my.sharepoint.com/:x:/g/personal/sbx3sw_virginia_edu/IQDyVqkEs4btQIAGCJ7Pglx3Ad7xBx42JkKNq6O1b3jF-yU?e=Py00Rs) |
+| `medicines.csv` | one row per unique patient, only responses to questions about individual medications, encounter_id is FK to connect to `diabetic_readmisison_cleaned.csv` | [Link](https://myuva-my.sharepoint.com/:x:/g/personal/sbx3sw_virginia_edu/IQAqdCwu-td9SpQ8rI8ojayKAaifQVP28RUVtrQ8s-Ei8u4?e=JP2IEK) |
+| `admission_source_id.csv` | description of the code for admission source ids, includes the numeric number that is a foreign key in the `diabetic_readmission_cleaned.csv` and description | [Link](https://myuva-my.sharepoint.com/:x:/g/personal/sbx3sw_virginia_edu/IQC3wA1LixVlQIT6IEf9hDaZAYQKuFGVXT9HM9OVEhbeG6c?e=bULAZZ) |
+| `admission_type_id.csv` | description of the code for admission type ids, includes the number number that is a foreign key in the `diabetic_readmission_cleaned.csv` and description | [Link](https://myuva-my.sharepoint.com/:x:/g/personal/sbx3sw_virginia_edu/IQAfuM94kzspQbSo5xhaxCf3ASP-CQ_8c9rkghwdag5wJsI?e=NWKBwC) |
+| `discharge_disposition_id.csv` | discription of the code for discharge disposition ids, includes the number number that is a foreign key in the `diabetic_readmission_cleaned.csv` and description | [Link](https://myuva-my.sharepoint.com/:x:/g/personal/sbx3sw_virginia_edu/IQBtZ_ZwXp-gTYY5O6bwVQzLATtTt6s1hUrf3cn-9BFgEVQ?e=nae7BW) |
 
 ### Data Dictionary
 
